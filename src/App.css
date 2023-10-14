@@ -1,34 +1,36 @@
-.bg{
-    background:linear-gradient(to right, rgb(178, 61, 194), rgb(218, 37, 142));
-    width: 950px;
-    border: 100px;
-    padding: 60px;
-    margin: 100px;
-    height: 450px;
-
-  }
-
-  .App{
-    background:linear-gradient(to right, rgb(175, 124, 160), rgb(175, 124, 160));
-      width: 500px;
-      border: 15px;
-      padding: 50px;
-      margin: 50px;
-      text-align: center;
-      height: 300px;
-      border-radius: 25px;
-      box-shadow: rgba(0,0,0,0.8) 0 0 10px;
-
-    }   
-
-
-
 .App {
-  font-family: sans-serif;
   text-align: center;
 }
 
-.button{
-  background-color: rgb(11, 158, 23);
-  color:white;
+.color-palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.color-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  box-shadow: 2px 4px 5px grey;
+}
+
+.color-button.selected {
+  border: 2px solid #bdb3b351;
+}
+
+.color-display {
+  width: 1000px;
+  height: 600px;
+  z-index: -1;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 10px 2px grey;
+  border-radius: 20px;
 }
